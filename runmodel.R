@@ -1,5 +1,5 @@
 rm(list = ls())
-options(mc.cores = parallel::detectCores())
+options(mc.cores = parallel::detectCores() - 2) # leave some cores free for me :D
 
 library(rstan)
 library(dplyr)
@@ -11,7 +11,6 @@ library(curl)
 library(shinystan)
 library(rmarkdown)
 
-setwd("~/GitHub/polls")
 
 ####################
 # Useful functions #
