@@ -7,3 +7,26 @@ The model is presented briefly at the end of [`report.html`](https://rawgit.com/
 `report.Rmd` is a Rmarkdown document used to automatically generate the graphs/tables/maps in [`report.html`](https://rawgit.com/pkremp/polls/master/report.html) and relies on `graphs.R`.
 
 
+# Requirements
+
+The following R packages are required to reproduce the analysis
+
+```r
+curl
+dplyr
+DT
+ggplot2
+ggrepel
+knitr
+lubridate
+mapproj
+maps
+mvtnorm
+purrr
+reshape2
+rmarkdown
+rstan
+shinystan
+stringr
+tidyr
+```
