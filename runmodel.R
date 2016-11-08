@@ -101,6 +101,8 @@ df <- all_polls %>%
            pollster = replace(pollster, pollster == "WashPost", "Washington Post"),
            pollster = replace(pollster, pollster == "ABC News", "ABC"),
            undecided = ifelse(is.na(undecided), 0, undecided),
+           clinton = ifelse(is.na(clinton), 0, clinton),
+           trump = ifelse(is.na(trump), 0, trump),
            other = ifelse(is.na(other), 0, other) + 
                ifelse(is.na(johnson), 0, johnson) + 
                ifelse(is.na(mcmullin), 0, mcmullin),
